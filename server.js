@@ -31,7 +31,7 @@ app.use(router.routes())
 app.use(router.allowedMethods())
 
 // Start server
-const port = 3060
+const port = process.env.PORT || 3060
 module.exports = app.listen(port, function() {
   console.log('Server listening on', port)
 })
