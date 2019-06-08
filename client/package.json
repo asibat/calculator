@@ -10,10 +10,9 @@
     "react-icons": "^3.7.0",
     "react-point": "^3.0.1"
   },
-  "devDependencies": {
-    "react-scripts": "3.0.1"
-  },
+  "devDependencies": {},
   "scripts": {
+    "react-scripts": "3.0.1",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
