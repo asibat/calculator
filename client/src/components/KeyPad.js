@@ -23,9 +23,15 @@ export default class KeyPad extends Component {
       screenValue: '0',
       operation: null
     }
+
+    this.handleDigit = this.handleDigit.bind(this)
+    this.handleDot = this.handleDot.bind(this)
+    this.handleKeyDown = this.handleKeyDown.bind(this)
+    this.handleOperation = this.handleOperation.bind(this)
+    this.handleFunction = this.handleFunction.bind(this)
   }
 
-  handleKeyDown = async event => {
+  async handleKeyDown(event) {
     let { key } = event
     event.preventDefault()
 
