@@ -8,11 +8,11 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^3.7.0",
-    "react-point": "^3.0.1"
+    "react-point": "^3.0.1",
+    "react-scripts": "3.0.1"
   },
   "devDependencies": {},
   "scripts": {
-    "react-scripts": "3.0.1",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
