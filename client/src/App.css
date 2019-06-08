@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+button {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button:active {
+  box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.25);
+}
+
+.content {
+  display: flex;
+  min-height: 400px;
+  max-height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  height: 400px;
+  width: inherit;
+  display: flex;
+}
+
+.keypad {
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px
+}
+
+.calculator-key {
+  width: 80px;
+  height: 80px;
+  border-top: 1px solid #777;
+  border-right: 1px solid #666;  
+  text-align: center;
+  line-height: 80px;
+}
+
+.keypad .function-keys {
+  display: flex;
+}
+
+.keypad .digit-keys {
+  background: #e0e0e7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+.keypad .digit-keys .key-0 {
+  width: 160px;
+}
+
+.keypad .digit-keys .key-dot {
+  padding-top: 15px;
+}
+
+.keypad .digit-keys .calculator-key {
+  font-size: 2.25em;
+}
+
+.keypad .function-keys .key-multiply {
+  line-height: 50px;
+}
+
+.key-equals {
+  height: 200px;
+}
+
+.key-multiply, .key-divide {
+  height: 100px;
+}
+
+.key-multiply, .key-divide, .key-equals {
+  font-size: 2em;
+}
+
+.keypad .function-keys .calculator-key {
+  font-size: 2em;
+  width: 120px;
+}
+
+.keypad .function-keys {
+  background: linear-gradient(to bottom, rgba(202,202,204,1) 0%, rgba(196,194,204,1) 100%);
+}
+
+.operator-keys {
+  background:  linear-gradient(to bottom, rgba(252,156,23,1) 0%, rgba(247,126,27,1) 100%);
+}
+
+.calculator-display {
+  color: white;
+  line-height: 130px;
+  font-size: 6em;
+  flex: 1;
+}
+
+.calculator-container {
+  width: 320px;
+  position: fixed;
+  top: 90px;
+  left: 35%;
+  margin-top: -50px;
+  box-shadow: 0 2rem 4rem var(--shadow);
+  background-color: var(--color-light-black);
+}
+
+.auto-scaling-text {
+  display: inline-block;
+}
+
+.calculator-display .auto-scaling-text {
+  padding: 0 30px;
+  position: absolute;
+  right: 0;
+  transform-origin: right;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
